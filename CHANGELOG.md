@@ -3,6 +3,7 @@
 ## Develop
 
 - Add support for differential GPS last time
+- Rework library CMake with removed INTERFACE type
 
 ## v2.2.0
 

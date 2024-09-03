@@ -26,9 +26,9 @@ set(lwgps_include_DIRS
 )
 
 # Register library to the system
-add_library(lwgps INTERFACE)
-target_sources(lwgps INTERFACE ${lwgps_core_SRCS})
-target_include_directories(lwgps INTERFACE ${lwgps_include_DIRS})
+add_library(lwgps)
+target_sources(lwgps PRIVATE ${lwgps_core_SRCS})
+target_include_directories(lwgps PUBLIC ${lwgps_include_DIRS})
 target_compile_options(lwgps PRIVATE ${LWGPS_COMPILE_OPTIONS})
 target_compile_definitions(lwgps PRIVATE ${LWGPS_COMPILE_DEFINITIONS})
 
