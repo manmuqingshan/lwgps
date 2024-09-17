@@ -118,8 +118,7 @@ prv_parse_number(lwgps_t* ghandle, const char* text) {
  */
 static lwgps_float_t
 prv_parse_float_number(lwgps_t* ghandle, const char* text) {
-    lwgps_float_t value = (lwgps_float_t)0, power = (lwgps_float_t)1;
-    int sign = 1;
+    lwgps_float_t value = (lwgps_float_t)0, power = (lwgps_float_t)1, sign = (lwgps_float_t)1;
 
     if (text == NULL) {
         text = ghandle->p.term_str;
